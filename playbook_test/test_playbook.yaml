@@ -26,3 +26,4 @@ Offending RSA key in /home/sherif/.ssh/known_hosts:1
   ssh-keygen -f '/home/sherif/.ssh/known_hosts' -R '192.168.52.11'
 Host key for 192.168.52.11 has changed and you have requested strict checking.
 Host key verification failed.
+ssh-keygen -f "/home/sherif/.ssh/known_hosts" -R "192.168.52.11"
