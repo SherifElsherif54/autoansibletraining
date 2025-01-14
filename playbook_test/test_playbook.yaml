@@ -3,3 +3,10 @@
 ssh admin@192.168.52.11
 ssh_dispatch_run_fatal: Connection to 192.168.52.11 port 22: Invalid key length
 /etc/ssh/ssh_config
+Debug Further (Optional)
+Enable debugging on the SSH client to see detailed logs:
+
+bash
+Copy code
+ssh -vvv admin@192.168.52.11
+If the issue persists, the logs will provide more details about what is failing.
