@@ -10,3 +10,19 @@ bash
 Copy code
 ssh -vvv admin@192.168.52.11
 If the issue persists, the logs will provide more details about what is failing.
+sh admin@192.168.52.11
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the RSA key sent by the remote host is
+SHA256:jt+mUmo9CnwkxEg9bVeh8NX7F4u3I9HAm/lc7dQ3w2Q.
+Please contact your system administrator.
+Add correct host key in /home/sherif/.ssh/known_hosts to get rid of this message.
+Offending RSA key in /home/sherif/.ssh/known_hosts:1
+  remove with:
+  ssh-keygen -f '/home/sherif/.ssh/known_hosts' -R '192.168.52.11'
+Host key for 192.168.52.11 has changed and you have requested strict checking.
+Host key verification failed.
